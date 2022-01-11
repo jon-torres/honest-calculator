@@ -1,4 +1,4 @@
-# Honest calculator
+# Honest Calculator
 
 This project is part of the NLP track at JetBrains Academy.<br><br>
 It's a simple script that asks for an equation and prints a message based<br> 
