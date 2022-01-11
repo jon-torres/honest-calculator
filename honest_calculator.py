@@ -76,6 +76,7 @@ while True:
 
         if input("Do you want to continue calculations? (y / n):" + "\n") == "n":
             break
+
     except ZeroDivisionError:
         print("Yeah... division by zero. Smart move...")
     except KeyError:
