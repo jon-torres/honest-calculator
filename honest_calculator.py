@@ -33,22 +33,6 @@ def check(v1, v2, v3):
         print(msg)
 
 
-def add(x, y):
-    return x + y
-
-
-def sub(x, y):
-    return x - y
-
-
-def div(x, y):
-    return x / y
-
-
-def mult(x, y):
-    return x * y
-
-
 # Main code
 
 while True:
@@ -65,13 +49,13 @@ while True:
         check(x, y, oper)
 
         if oper == "+":
-            result = add(x, y)
+            result = x + y
         if oper == "-":
-            result = sub(x, y)
+            result = x - y
         if oper == "*":
-            result = mult(x, y)
+            result = x * y
         if oper == "/":
-            result = div(x, y)
+            result = x / y
 
         print(result)
 
