@@ -10,7 +10,6 @@ msg_ = [
     "You are",  # msg_[-1]
 ]
 memory = 0.0
-msg_index = 0
 
 # Functions
 
