@@ -1,12 +1,13 @@
 # Global variables
 msg_ = [
-    "Are you sure? It is only one digit! (y / n):" + "\n",
-    "Don't be silly! It's just one number! Add to the memory? (y / n):" + "\n",
-    "Last chance! Do you really want to embarrass yourself? (y / n):" + "\n",
-    " ... lazy",
-    " ... very lazy",
-    " ... very, very lazy",
-    "You are",
+    "Are you sure? It is only one digit! (y / n):" + "\n",  # msg_[0]
+    "Don't be silly! It's just one number! Add to the memory? (y / n):"
+    + "\n",  # msg_[1]
+    "Last chance! Do you really want to embarrass yourself? (y / n):" + "\n",  # msg_[2]
+    " ... lazy",  # msg_[3]
+    " ... very lazy",  # msg_[4]
+    " ... very, very lazy",  # msg_[5]
+    "You are",  # msg_[-1]
 ]
 memory = 0.0
 msg_index = 0
@@ -32,6 +33,22 @@ def check(v1, v2, v3):
         print(msg)
 
 
+def add(x, y):
+    return x + y
+
+
+def sub(x, y):
+    return x - y
+
+
+def div(x, y):
+    return x / y
+
+
+def mult(x, y):
+    return x * y
+
+
 # Main code
 
 while True:
@@ -47,8 +64,15 @@ while True:
 
         check(x, y, oper)
 
-        operations = {"*": x * y, "+": x + y, "-": x - y}
-        result = operations.pop(oper) if oper in operations else x / y
+        if oper == "+":
+            result = add(x, y)
+        if oper == "-":
+            result = sub(x, y)
+        if oper == "*":
+            result = mult(x, y)
+        if oper == "/":
+            result = div(x, y)
+
         print(result)
 
         # It takes the input and checks it. In case "yes" and the result is one digit,
