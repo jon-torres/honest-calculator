@@ -59,8 +59,8 @@ while True:
         print(result)
 
         # It takes the input and checks it. In case "yes" and the result is one digit,
-        # then it keep asking whether the user would want to store the input.
-        # After the last question, it saves the result in the memory var and exit the loop.
+        # then it keeps asking whether the user would want to store the input.
+        # After the last question, it saves the result in the memory var and exits the loop.
         answer = input("Do you want to store the result? (y / n):" + "\n")
         if answer == "y" and is_one_digit(result):
             msg_index = 0
@@ -72,11 +72,11 @@ while True:
                     elif (answer2 == "y") and (msg_index == 2):
                         memory = result
                         break
-                # If the answer is "no", memory value is not changed and it exits the loop.
+                # If the answer is "no", the memory value is not changed and it exits the loop.
                 elif answer2 == "n":
                     memory = memory
                     break
-        # Else, if the answer is yes and result has more than one digit,
+        # Else, if the answer is "yes" and the result has more than one digit,
         # then it saves the result in the memory var.
         elif answer == "y" and not (is_one_digit(result)):
             memory = result
