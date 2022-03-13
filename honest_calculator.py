@@ -13,7 +13,7 @@ memory = 0.0
 
 # Functions
 
-# Returns the argument if it has only and digit and type int
+# Returns the argument if it has only one digit of type int
 def is_one_digit(v):
     return -10 < v < 10 and v.is_integer()
 
